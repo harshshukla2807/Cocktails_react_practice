@@ -93,6 +93,7 @@ Buttons
 .btn:hover {
   background: var(--primaryColor);
   color: var(--mainWhite);
+  
 }
 .btn-white {
   background: transparent;
@@ -102,15 +103,18 @@ Buttons
 .btn-white:hover {
   background: var(--mainWhite);
   color: var(--primaryColor);
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--primaryColor);
   color: var(--mainWhite);
   border-color: transparent;
+  
 }
 .btn-primary:hover {
   background: var(--primaryLightColor);
   color: var(--primaryColor);
+  cursor: pointer;
 }
 .btn-block {
   width: 100%;
@@ -258,7 +262,7 @@ Cocktail
 .cocktail-footer h4,
 .cocktail-footer p {
   margin-bottom: 0.3rem;
-}
+} 
 .cocktail-footer h3 {
   font-size: 2rem;
 }

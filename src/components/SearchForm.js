@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useGlobalContext } from '../context'
 
 const SearchForm = () => {
+  const {searchTerm,setSearchTerm}=useGlobalContext()
+  
   return (
-    <div>
-      <h2>search form component</h2>
-    </div>
+  <div className='search'>
+    <form action='' className='search-form form-control'>
+      <label className='label '>Search Your Favourite Cocktail</label>
+      <input type="text" value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)} className='input'/>
+    </form>
+  </div>
   )
 }
 

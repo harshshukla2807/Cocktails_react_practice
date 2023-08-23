@@ -12,17 +12,6 @@ function App() {
     <Router>
       <Navbar/>
         <Routes>
-          {/* <Route exact path="/">
-          <Route  path="/about">
-            <About/>
-          </Route>
-          <Route  path="/cocktail/:id">
-            <SingleCocktail/>
-          </Route>
-          <Route path="*">
-            <Error/>
-          </Route> */}
-          
             <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About />}/>
             <Route path='/cocktail/:id' element={<SingleCocktail />}/>
